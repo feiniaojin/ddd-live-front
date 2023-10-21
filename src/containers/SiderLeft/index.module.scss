@@ -1,0 +1,27 @@
+.siderLeft{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,#e3f2fd26, #E3F2FD);
+
+    .logo{
+        width: 100%;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        min-height: 64px;
+        font-size: 14px;
+        font-weight: 600;
+        .img{
+            height: 32px;
+            height: 32px;
+            height: 36px;
+            width: 36px;
+            object-fit: fill;
+        
+    }
+    }
+   
+    
+       
+}

@@ -1,0 +1,56 @@
+
+ .driver{
+  height: 1px;
+  width: 100%;
+  background: #d9d9d9;
+  margin: 20px 0px;
+}
+.option{
+  display: flex;
+  gap:10px
+}
+:global{
+  .ant-table-tbody >tr.ant-table-row:hover>td{
+    background: rgba(239, 5, 5, 0.5) !important;
+  }
+  /* 设置单行背景色为灰色 */
+.ant-table-tbody tr:nth-child(odd) td {
+  background: #d9d9d9c9;
+
+}
+
+/* 设置双行背景色为白色 */
+.ant-table-tbody tr:nth-child(even) td {
+  background: #ffffff;
+
+}
+:where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-byeoj0).ant-table-wrapper .ant-table-thead >tr>td {
+  background: rgb(196 185 162 / 88%) !important
+}
+}
+.titleBox{
+  display: flex;
+  align-items: center;
+  .icon{
+    font-size: 18px;
+    width: 34px;
+    border-radius: 50%;
+    height: 34px;
+    margin-right: 8px;
+  }
+  .title{
+    animation: blink 1s linear infinite;  
+
+  }
+  @keyframes blink {  
+    0% {  
+      color: red;  
+    }  
+    50% {  
+      color: blue;  
+    }  
+    100% {  
+      color: green;  
+    }  
+  }
+}

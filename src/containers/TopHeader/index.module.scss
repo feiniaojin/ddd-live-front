@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    background: linear-gradient(to right,#E3F2FD, #9198e5);
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    .avator {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        min-height: 64px;
+        font-size: 14px;
+        margin-right: 20px;
+        font-weight: 600;
+        .img {
+            height: 32px;
+            width: 32px;
+            object-fit: fill;
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+    }
+
+
+
+}

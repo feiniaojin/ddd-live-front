@@ -1,0 +1,10 @@
+.rankScreening{
+  .col{
+    margin-right: 10px;
+  }
+  :global {
+    .ant-form-item-label>label {
+      font-weight: bold;
+    }
+  }
+}
