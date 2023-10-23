@@ -1,3 +1,5 @@
+import {message} from 'antd';
+
 //样式名称合并
 export const clsnames = (...args) => {
     return args.filter(p => typeof p === 'string' && p.trim()).join(' ')
@@ -42,3 +44,19 @@ export const getUrlParam = (name) => {
     }
     return "";
 };
+export  function writeToClipboard(text,desc) {
+    // navigator.clipboard.writeText(text)
+    //   .then(() => {
+    //     message.success("文本已成功复制到剪贴板！");
+    //   })
+    //   .catch((error) => {
+    //     console.error("无法复制文本到剪贴板：", error);
+    //   });
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    message.success(desc||"文本已成功复制到剪贴板！");
+  }

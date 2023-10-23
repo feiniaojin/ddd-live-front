@@ -1,13 +1,14 @@
 import React, { useState, useRef } from 'react'
-import styles from './index.less'
+import styles from './index.module.scss'
 import { Button, Tour } from 'antd';
 import { useMount } from 'ahooks';
-import { DatabaseTwoTone, AppstoreTwoTone, QuestionCircleTwoTone } from '@ant-design/icons';
+import { DatabaseTwoTone, AppstoreTwoTone, QuestionCircleTwoTone,PlusOutlined } from '@ant-design/icons';
 import Table from './Table'
 import Card from '@/components/Card'
 import Seach from './Seach'
 import { getUserInfo } from '@/api/index.jsx'
-
+import Model from './Model'
+import {clsnames } from '@/utils'
 
 const data = [
   {
@@ -167,6 +168,12 @@ export default function ListView(props) {
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const [open, setOpen] = useState(false);
+  const [target, setTarget] = useState(null);
+  const [visible, setVisible] = useState(false);
+  const onEdit=(flag,data)=>{
+    setTarget(data)
+    setVisible(flag)
+  }
   const steps = [
     {
       title: '搜索',
@@ -202,13 +209,16 @@ export default function ListView(props) {
         <QuestionCircleTwoTone />
 
       </a>
+      <Button size='small' type={'primary'} className={clsnames(styles.button,styles.toRight)} icon={<PlusOutlined />} onClick={() => {
+        onEdit(true,null)
+      }}>新建</Button>
     </div>
     <div ref={ref3}>
       {view === '1' ?
-        <Card list={list} />
-        : <Table list={list} />
+        <Card list={list} onEdit={onEdit}/>
+        : <Table list={list} onEdit={onEdit}/>
       }  </div>
     <Tour open={open} onClose={() => setOpen(false)} steps={steps} />
-
+<Model visible={visible} onEdit={onEdit} target={target}/>
   </div>
 }

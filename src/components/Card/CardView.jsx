@@ -2,7 +2,7 @@
 import React, { useState} from 'react'
 import styles from './index.module.scss'
 import { FileWordTwoTone,Html5TwoTone ,FileExcelTwoTone} from '@ant-design/icons';
-import {Col } from 'antd'
+import {Col,Popconfirm } from 'antd'
 import folder from '@/assets/images/folder.png';
 
 export default function CardView(props) {
@@ -42,12 +42,25 @@ export default function CardView(props) {
         <span className={styles.button}  onClick={()=>onAbilityQuality&&onAbilityQuality(r)} >
             查看
             </span>
-            <span className={styles.button} onClick={()=>onEdit&&onEdit(r)} >
-            通过
+            <span className={styles.button} onClick={()=>onEdit&&onEdit(true,r)} >
+            编辑
             </span>
-        <span className={styles.button}  onClick={()=>onDelete&&onDelete(r)}>
+            <Popconfirm
+            title="提示"
+            description="确定要删除该条数据吗?"
+            okText="Yes"
+            cancelText="No"
+            onConfirm={() => {
+              console.log('删除')
+              onDelete&&onDelete(r)
+            }}
+          >
+            <span className={styles.button}  >
             删除
             </span>
+
+          </Popconfirm>
+    
           
         </div>}
     </div>

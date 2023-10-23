@@ -1,0 +1,16 @@
+
+
+.Container{
+    position: relative;
+    .view{
+        position: absolute;
+        top: 0px;
+        z-index: 99999;
+    }
+    .changeView {
+        gap: 3px
+    }
+    .toRight{
+        float: right;
+    }
+}
