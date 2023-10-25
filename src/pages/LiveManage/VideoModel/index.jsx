@@ -132,11 +132,11 @@ const App = (props) => {
    <div data-vjs-player>
       <video ref={videoRef} className="video-js vjs-default-skin"></video>
     </div> */}
-      <ReactPlayer
+    { link&& <ReactPlayer
         url={link}
         controls={true}
         width="100%"
-        height="auto"
+        height="100%"
         // 添加以下属性以优化加载速度
         pip={true} // 启用画中画模式
         preload="auto" // 自动预加载视频
@@ -151,7 +151,7 @@ const App = (props) => {
             }
           }
         }}
-      />
+      />}
     </Modal>
   );
 };
