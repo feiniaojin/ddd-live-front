@@ -29,17 +29,20 @@ const getImg = (r) => {
 
 const App = (props) => {
   const columns = [
-    { title: '推流ID', dataIndex: 'id', key: 'id' },
-  { title: '房间号', dataIndex: 'name', key: 'name' },
-  { title: '直播号', dataIndex: 'name', key: 'name' },
-  { title: '简介', dataIndex: 'description', key: 'description' },
-  { title: '计划开播时间', dataIndex: 'time', key: 'time' },
-  { title: '计划下播时间', dataIndex: 'time', key: 'time' },
-  { title: '直播状态', dataIndex: 'status', key: 'status' },
+    { title: '推流ID', dataIndex: 'id', key: 'id',      align:"center", },
+  { title: '房间号', dataIndex: 'name', key: 'name',      align:"center", },
+  { title: '直播号', dataIndex: 'name', key: 'name' ,      align:"center",},
+  { title: '简介', dataIndex: 'description', key: 'description' ,      align:"center",},
+  { title: '计划开播时间', dataIndex: 'time', key: 'time' ,      align:"center",},
+  { title: '计划下播时间', dataIndex: 'time', key: 'time',      align:"center", },
+  { title: '直播状态', dataIndex: 'status', key: 'status' ,      align:"center",},
   { title: '操作', dataIndex: 'option', key: 'option' ,
+   align:"center",
+   width:330,
+
    render:(r,row) => {
     return <div className={styles.option}>
-        <a onClick={() => { props.onEdit(true, row) }}>编辑</a>
+        <a className={styles.edit} onClick={() => { props.onEdit(true, row) }}>编辑</a>
           <Popconfirm
             title="提示"
             description="确定要删除该条数据吗?"
@@ -49,11 +52,11 @@ const App = (props) => {
               console.log('删除')
             }}
           >
-            <a >删除</a>
+            <a className={styles.delete}>删除</a>
 
           </Popconfirm>
-      <a onClick={()=>{
-          props.handleButtonClick("https://www.w3schools.com/html/movie.mp4");
+      <a className={styles.other} onClick={()=>{
+          props.handleButtonClick(true,"https://sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/flv/xgplayer-demo-360p.flv");
 
       }}>直播预览</a>
       <a
@@ -61,6 +64,7 @@ const App = (props) => {
         writeToClipboard('推流地址',"推流地址已成功复制到剪贴板！");
 
     }}
+    className={styles.other}
       > 推流地址</a>
     </div>
   }  },

@@ -9,13 +9,12 @@ const HouseManage = lazy(() => import('@/pages/HouseManage'))
 const LiveManage = lazy(() => import('@/pages/LiveManage'))
 
 
-
 const routerData= [
     {
         id: "/",
         path: "/",
-        element: <LayoutFree />,
-        desc: '首页布局',
+        element: <PersonManage />,
+        desc: '主播管理',
         authority: "",
     },
     {

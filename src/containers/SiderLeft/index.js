@@ -13,13 +13,13 @@ class SiderLeft extends React.Component {
             items: [{
                 key: "/",
                 icon: React.createElement(BankFilled),
-                label: "首页门户"
-            }, 
-            {
-                key: "/person-manage",
-                icon: React.createElement(UsergroupAddOutlined),
                 label: "主播管理"
             }, 
+            // {
+            //     key: "/person-manage",
+            //     icon: React.createElement(UsergroupAddOutlined),
+            //     label: "主播管理"
+            // }, 
             {
                 key: "/house-manage",
                 icon: React.createElement(BankFilled),

@@ -2485,6 +2485,20 @@
     "@typescript-eslint/types" "5.59.9"
     "eslint-visitor-keys" "^3.3.0"
 
+"@videojs/http-streaming@2.16.2":
+  "integrity" "sha1-qb6SW042ikHb1n1JxPVmcVFpuEs="
+  "resolved" "http://registry.m.jd.com/@videojs/http-streaming/download/@videojs/http-streaming-2.16.2.tgz"
+  "version" "2.16.2"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@videojs/vhs-utils" "3.0.5"
+    "aes-decrypter" "3.1.3"
+    "global" "^4.4.0"
+    "m3u8-parser" "4.8.0"
+    "mpd-parser" "^0.22.1"
+    "mux.js" "6.0.1"
+    "video.js" "^6 || ^7"
+
 "@videojs/http-streaming@3.5.3":
   "integrity" "sha1-IxBuHvL9m5tiqps9wgg7022ZyWM="
   "resolved" "http://registry.m.jd.com/@videojs/http-streaming/download/@videojs/http-streaming-3.5.3.tgz"
@@ -2499,7 +2513,7 @@
     "mux.js" "7.0.0"
     "video.js" "^7 || ^8"
 
-"@videojs/vhs-utils@^3.0.5":
+"@videojs/vhs-utils@^3.0.4", "@videojs/vhs-utils@^3.0.5", "@videojs/vhs-utils@3.0.5":
   "integrity" "sha1-ZlunDXgli6Grl3Nk4v6fTUeZxGw="
   "resolved" "http://registry.m.jd.com/@videojs/vhs-utils/download/@videojs/vhs-utils-3.0.5.tgz"
   "version" "3.0.5"
@@ -2525,6 +2539,14 @@
     "@babel/runtime" "^7.5.5"
     "global" "~4.4.0"
     "is-function" "^1.0.1"
+
+"@vimeo/player@^2.3.0":
+  "integrity" "sha1-dMK58hwo2naLqo45Ex4O7AfUPW4="
+  "resolved" "http://registry.m.jd.com/@vimeo/player/download/@vimeo/player-2.18.0.tgz"
+  "version" "2.18.0"
+  dependencies:
+    "native-promise-only" "0.8.1"
+    "weakmap-polyfill" "2.0.4"
 
 "@webassemblyjs/ast@^1.11.5", "@webassemblyjs/ast@1.11.6":
   "integrity" "sha1-2wRlVdPEE/iWbKUKlRdqDixkLiQ="
@@ -2725,6 +2747,23 @@
   "integrity" "sha1-wagdC94Olv7QZ0SI0qMabXq5t6c="
   "resolved" "http://registry.m.jd.com/aes-decrypter/download/aes-decrypter-4.0.1.tgz"
   "version" "4.0.1"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@videojs/vhs-utils" "^3.0.5"
+    "global" "^4.4.0"
+    "pkcs7" "^1.0.4"
+
+"aes-decrypter@1.0.3":
+  "integrity" "sha1-nAa4pUNaWtCduTP4oBSvzxhMw04="
+  "resolved" "http://registry.m.jd.com/aes-decrypter/download/aes-decrypter-1.0.3.tgz"
+  "version" "1.0.3"
+  dependencies:
+    "pkcs7" "^0.2.3"
+
+"aes-decrypter@3.1.3":
+  "integrity" "sha1-Zf9fIXUyTYDEEIOw4TXRRksSrDU="
+  "resolved" "http://registry.m.jd.com/aes-decrypter/download/aes-decrypter-3.1.3.tgz"
+  "version" "3.1.3"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@videojs/vhs-utils" "^3.0.5"
@@ -3533,6 +3572,11 @@
   "version" "5.3.2"
   dependencies:
     "source-map" "~0.6.0"
+
+"clean-react-props@^0.1.3":
+  "integrity" "sha1-M30rGNrmBCU3LWlzX7zS/UwS3r4="
+  "resolved" "http://registry.m.jd.com/clean-react-props/download/clean-react-props-0.1.3.tgz"
+  "version" "0.1.3"
 
 "cliui@^7.0.2":
   "integrity" "sha1-oCZe5lVHb8gHrqnfPfjfd4OAi08="
@@ -5272,6 +5316,14 @@
     "kind-of" "^6.0.2"
     "which" "^1.3.1"
 
+"global@^4.3.0", "global@~4.3.0", "global@4.3.2":
+  "integrity" "sha1-52mJJopsdMOJCLEwWxD8DjlOnQ8="
+  "resolved" "http://registry.m.jd.com/global/download/global-4.3.2.tgz"
+  "version" "4.3.2"
+  dependencies:
+    "min-document" "^2.19.0"
+    "process" "~0.5.1"
+
 "global@^4.3.1", "global@^4.4.0", "global@~4.4.0", "global@4.4.0":
   "integrity" "sha1-PnsQUXkAajI+1xqvyj6cV6XMZAY="
   "resolved" "http://registry.m.jd.com/global/download/global-4.4.0.tgz"
@@ -5279,14 +5331,6 @@
   dependencies:
     "min-document" "^2.19.0"
     "process" "^0.11.10"
-
-"global@~4.3.0":
-  "integrity" "sha1-52mJJopsdMOJCLEwWxD8DjlOnQ8="
-  "resolved" "http://registry.m.jd.com/global/download/global-4.3.2.tgz"
-  "version" "4.3.2"
-  dependencies:
-    "min-document" "^2.19.0"
-    "process" "~0.5.1"
 
 "global@4.3.0":
   "integrity" "sha1-737EvurVebRU9evV5/MD21T0Kis="
@@ -6677,7 +6721,7 @@
     "array-includes" "^3.1.5"
     "object.assign" "^4.1.3"
 
-"keycode@2.2.0":
+"keycode@^2.2.0", "keycode@2.2.0":
   "integrity" "sha1-PQr1bce4uOXLqNCpfxByBO7CKwQ="
   "resolved" "http://registry.m.jd.com/keycode/download/keycode-2.2.0.tgz"
   "version" "2.2.0"
@@ -6747,6 +6791,11 @@
   "integrity" "sha1-7KKE910pZQeTCdwK2SVauy68FjI="
   "resolved" "http://registry.m.jd.com/lines-and-columns/download/lines-and-columns-1.2.4.tgz"
   "version" "1.2.4"
+
+"load-script@^1.0.0":
+  "integrity" "sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ="
+  "resolved" "http://registry.m.jd.com/load-script/download/load-script-1.0.0.tgz"
+  "version" "1.0.0"
 
 "loader-runner@^4.2.0":
   "integrity" "sha1-wbShY7mfYUgwNTsWdV5xSawjFOE="
@@ -6829,6 +6878,11 @@
   "resolved" "http://registry.m.jd.com/lodash/download/lodash-4.17.21.tgz"
   "version" "4.17.21"
 
+"lomit@^0.1.1":
+  "integrity" "sha512-1WmzTB6ujYBYbVbsfy7jnQ9Tu9odzeB0m9Ijx//b6aKYS6KqaeWJVRl6XHVrczz8W76A0O239UJKsVirKzIIGg=="
+  "resolved" "https://registry.npmmirror.com/lomit/-/lomit-0.1.1.tgz"
+  "version" "0.1.1"
+
 "loose-envify@^1.1.0", "loose-envify@^1.4.0":
   "integrity" "sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8="
   "resolved" "http://registry.m.jd.com/loose-envify/download/loose-envify-1.4.0.tgz"
@@ -6875,6 +6929,20 @@
   "integrity" "sha1-+pLuIvx5gVA5fClxUsh5/gnwZsY="
   "resolved" "http://registry.m.jd.com/m3u8-parser/download/m3u8-parser-7.1.0.tgz"
   "version" "7.1.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@videojs/vhs-utils" "^3.0.5"
+    "global" "^4.4.0"
+
+"m3u8-parser@2.1.0":
+  "integrity" "sha1-yBcDKewc1RXQ1Yu4t2LamJbLA2g="
+  "resolved" "http://registry.m.jd.com/m3u8-parser/download/m3u8-parser-2.1.0.tgz"
+  "version" "2.1.0"
+
+"m3u8-parser@4.8.0":
+  "integrity" "sha1-Si1ZH99vJXnRKjJwgRmN+K+DCD0="
+  "resolved" "http://registry.m.jd.com/m3u8-parser/download/m3u8-parser-4.8.0.tgz"
+  "version" "4.8.0"
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@videojs/vhs-utils" "^3.0.5"
@@ -7030,6 +7098,16 @@
   dependencies:
     "commander" "*"
 
+"mpd-parser@^0.22.1", "mpd-parser@0.22.1":
+  "integrity" "sha1-vCv30+VjaOSwEhA1sFVnVAGHFSE="
+  "resolved" "http://registry.m.jd.com/mpd-parser/download/mpd-parser-0.22.1.tgz"
+  "version" "0.22.1"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@videojs/vhs-utils" "^3.0.5"
+    "@xmldom/xmldom" "^0.8.3"
+    "global" "^4.4.0"
+
 "mpd-parser@^1.0.1", "mpd-parser@^1.1.1":
   "integrity" "sha1-v0ecuwvsYFEwB1wOkEqFOykmWXM="
   "resolved" "http://registry.m.jd.com/mpd-parser/download/mpd-parser-1.2.2.tgz"
@@ -7071,6 +7149,19 @@
     "@babel/runtime" "^7.11.2"
     "global" "^4.4.0"
 
+"mux.js@4.3.2":
+  "integrity" "sha1-V21TffA33F7DXsExa5SNgV01whA="
+  "resolved" "http://registry.m.jd.com/mux.js/download/mux.js-4.3.2.tgz"
+  "version" "4.3.2"
+
+"mux.js@6.0.1":
+  "integrity" "sha1-Zc4PepYdVsAGgp0CTXcpAtKMd1U="
+  "resolved" "http://registry.m.jd.com/mux.js/download/mux.js-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "@babel/runtime" "^7.11.2"
+    "global" "^4.4.0"
+
 "mux.js@7.0.0":
   "integrity" "sha1-9fgM1jvF6vE7ouizOW1N0DqKofI="
   "resolved" "http://registry.m.jd.com/mux.js/download/mux.js-7.0.0.tgz"
@@ -7092,6 +7183,11 @@
   "integrity" "sha1-RDOAyFbW6fmCQmfZYLQjatWD6kw="
   "resolved" "http://registry.m.jd.com/nanoid/download/nanoid-3.3.6.tgz"
   "version" "3.3.6"
+
+"native-promise-only@0.8.1":
+  "integrity" "sha1-IKMYwwy0X3H+et+/eyHJnBRy7xE="
+  "resolved" "http://registry.m.jd.com/native-promise-only/download/native-promise-only-0.8.1.tgz"
+  "version" "0.8.1"
 
 "natural-compare-lite@^1.4.0":
   "integrity" "sha1-F7CVgZiJef3a/gIB6TG6kzyWy7Q="
@@ -7493,6 +7589,11 @@
   "integrity" "sha1-/uw1LqXDJo+yOjfHAqsWmfNaXzs="
   "resolved" "http://registry.m.jd.com/pirates/download/pirates-4.0.5.tgz"
   "version" "4.0.5"
+
+"pkcs7@^0.2.3":
+  "integrity" "sha1-ItYGZtAQZcXyRDkJjkpIMEUic74="
+  "resolved" "http://registry.m.jd.com/pkcs7/download/pkcs7-0.2.3.tgz"
+  "version" "0.2.3"
 
 "pkcs7@^1.0.4":
   "integrity" "sha1-YJC55xFg2r9pIJ1xnLr6U4sAocs="
@@ -8156,7 +8257,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.8.1", "prop-types@15.x":
+"prop-types@^15.6.1", "prop-types@^15.8.1", "prop-types@15.x":
   "integrity" "sha1-Z9h78aaU9IQ1zzMsJK8QIUoxQLU="
   "resolved" "http://registry.m.jd.com/prop-types/download/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -8793,7 +8894,18 @@
   optionalDependencies:
     "fsevents" "^2.3.2"
 
-"react@*", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3", "react@>= 16.3.0", "react@>=16.0.0", "react@>=16.11.0", "react@>=16.8", "react@>=16.9.0":
+"react-video-players@^0.1.11":
+  "integrity" "sha512-HuGHXhb/0yFAjaI+2NrlHfpH4JWRtZ/eJSgDXmv91OzPniByhQ//T+hhLnf+hFBCvcsPLRjdf3S+8E47H8CKFw=="
+  "resolved" "https://registry.npmmirror.com/react-video-players/-/react-video-players-0.1.11.tgz"
+  "version" "0.1.11"
+  dependencies:
+    "@vimeo/player" "^2.3.0"
+    "clean-react-props" "^0.1.3"
+    "lomit" "^0.1.1"
+    "prop-types" "^15.6.1"
+    "youtube-player" "^5.5.0"
+
+"react@*", "react@^16.8 || ^17.0 || ^18.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^18.0.0", "react@^18.2.0", "react@>= 16", "react@>= 16.3", "react@>= 16.3.0", "react@>=15", "react@>=16.0.0", "react@>=16.11.0", "react@>=16.8", "react@>=16.9.0":
   "integrity" "sha1-VVvZhZKIMlX6AN4U8RUakXtdd9U="
   "resolved" "http://registry.m.jd.com/react/download/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -9375,6 +9487,11 @@
   "integrity" "sha1-qaF2f4r4QVURTqq9c/mSc8j1mtk="
   "resolved" "http://registry.m.jd.com/signal-exit/download/signal-exit-3.0.7.tgz"
   "version" "3.0.7"
+
+"sister@^3.0.0":
+  "integrity" "sha1-uz458HsfdbvhlF8pon/x5aLya+Q="
+  "resolved" "http://registry.m.jd.com/sister/download/sister-3.0.2.tgz"
+  "version" "3.0.2"
 
 "sisteransi@^1.0.5":
   "integrity" "sha1-E01oEpd1ZDfMBcoBNw06elcQde0="
@@ -10153,7 +10270,7 @@
     "querystringify" "^2.1.1"
     "requires-port" "^1.0.0"
 
-"url-toolkit@^2.2.1":
+"url-toolkit@^2.1.3", "url-toolkit@^2.2.1":
   "integrity" "sha1-WEBrGOEsWIA+FGJN9eN09jiw9gc="
   "resolved" "http://registry.m.jd.com/url-toolkit/download/url-toolkit-2.2.5.tgz"
   "version" "2.2.5"
@@ -10222,6 +10339,53 @@
     "videojs-vtt.js" "0.12.6"
     "xhr" "2.2.2"
 
+"video.js@^5.17.0 || ^6.2.0":
+  "integrity" "sha1-+Uh9RjJzQPpI7NUTcqKYHbts3kw="
+  "resolved" "http://registry.m.jd.com/video.js/download/video.js-6.13.0.tgz"
+  "version" "6.13.0"
+  dependencies:
+    "babel-runtime" "^6.9.2"
+    "global" "4.3.2"
+    "safe-json-parse" "4.0.0"
+    "tsml" "1.0.1"
+    "videojs-font" "2.1.0"
+    "videojs-ie8" "1.1.2"
+    "videojs-vtt.js" "0.12.6"
+    "xhr" "2.4.0"
+
+"video.js@^5.19.1 || ^6.2.0":
+  "integrity" "sha1-+Uh9RjJzQPpI7NUTcqKYHbts3kw="
+  "resolved" "http://registry.m.jd.com/video.js/download/video.js-6.13.0.tgz"
+  "version" "6.13.0"
+  dependencies:
+    "babel-runtime" "^6.9.2"
+    "global" "4.3.2"
+    "safe-json-parse" "4.0.0"
+    "tsml" "1.0.1"
+    "videojs-font" "2.1.0"
+    "videojs-ie8" "1.1.2"
+    "videojs-vtt.js" "0.12.6"
+    "xhr" "2.4.0"
+
+"video.js@^6 || ^7":
+  "integrity" "sha1-Nvy73t7XVwiaELu3j0nDYKLQydQ="
+  "resolved" "http://registry.m.jd.com/video.js/download/video.js-7.21.5.tgz"
+  "version" "7.21.5"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@videojs/http-streaming" "2.16.2"
+    "@videojs/vhs-utils" "^3.0.4"
+    "@videojs/xhr" "2.6.0"
+    "aes-decrypter" "3.1.3"
+    "global" "^4.4.0"
+    "keycode" "^2.2.0"
+    "m3u8-parser" "4.8.0"
+    "mpd-parser" "0.22.1"
+    "mux.js" "6.0.1"
+    "safe-json-parse" "4.0.0"
+    "videojs-font" "3.2.0"
+    "videojs-vtt.js" "^0.15.5"
+
 "video.js@^7 || ^8", "video.js@^8", "video.js@^8.5.2":
   "integrity" "sha1-Ec67OTSgIODkqwTE1FTIw/Nf+Lg="
   "resolved" "http://registry.m.jd.com/video.js/download/video.js-8.5.2.tgz"
@@ -10242,12 +10406,45 @@
     "videojs-font" "4.1.0"
     "videojs-vtt.js" "0.15.5"
 
-"videojs-contrib-quality-levels@4.0.0":
+"videojs-contrib-hls@^5.15.0":
+  "integrity" "sha1-/klXNn5daLfSP3jtMuN6ndiSoKg="
+  "resolved" "http://registry.m.jd.com/videojs-contrib-hls/download/videojs-contrib-hls-5.15.0.tgz"
+  "version" "5.15.0"
+  dependencies:
+    "aes-decrypter" "1.0.3"
+    "global" "^4.3.0"
+    "m3u8-parser" "2.1.0"
+    "mux.js" "4.3.2"
+    "url-toolkit" "^2.1.3"
+    "video.js" "^5.19.1 || ^6.2.0"
+    "videojs-contrib-media-sources" "4.7.2"
+    "webwackify" "0.1.6"
+
+"videojs-contrib-media-sources@4.7.2":
+  "integrity" "sha1-Ct+SkQfVt0zyyKuygkyCF35DhY4="
+  "resolved" "http://registry.m.jd.com/videojs-contrib-media-sources/download/videojs-contrib-media-sources-4.7.2.tgz"
+  "version" "4.7.2"
+  dependencies:
+    "global" "^4.3.0"
+    "mux.js" "4.3.2"
+    "video.js" "^5.17.0 || ^6.2.0"
+    "webwackify" "0.1.6"
+
+"videojs-contrib-quality-levels@^4.0.0", "videojs-contrib-quality-levels@4.0.0":
   "integrity" "sha1-+qgJZZTNv8PMvv6FcvwgUxuiPz0="
   "resolved" "http://registry.m.jd.com/videojs-contrib-quality-levels/download/videojs-contrib-quality-levels-4.0.0.tgz"
   "version" "4.0.0"
   dependencies:
     "global" "^4.4.0"
+
+"videojs-flash@^2.2.1":
+  "integrity" "sha1-GiJduxztIArpu/FeAf5KYQhtkPE="
+  "resolved" "http://registry.m.jd.com/videojs-flash/download/videojs-flash-2.2.1.tgz"
+  "version" "2.2.1"
+  dependencies:
+    "global" "^4.4.0"
+    "video.js" "^6 || ^7"
+    "videojs-swf" "5.4.2"
 
 "videojs-flvjs@^0.2.0":
   "integrity" "sha1-T3dRRKy/OEaz+qY1yxOpPr+YJFc="
@@ -10262,6 +10459,16 @@
   "resolved" "http://registry.m.jd.com/videojs-font/download/videojs-font-2.0.0.tgz"
   "version" "2.0.0"
 
+"videojs-font@2.1.0":
+  "integrity" "sha1-olkwpn9snPvyu4jay4xrRR8JM3k="
+  "resolved" "http://registry.m.jd.com/videojs-font/download/videojs-font-2.1.0.tgz"
+  "version" "2.1.0"
+
+"videojs-font@3.2.0":
+  "integrity" "sha1-ISydP05Ow/pzRRZ9ZDFq3TXpIjI="
+  "resolved" "http://registry.m.jd.com/videojs-font/download/videojs-font-3.2.0.tgz"
+  "version" "3.2.0"
+
 "videojs-font@4.1.0":
   "integrity" "sha1-OuHbqsYLTw8cTm9/+WYqid8XYBU="
   "resolved" "http://registry.m.jd.com/videojs-font/download/videojs-font-4.1.0.tgz"
@@ -10274,22 +10481,27 @@
   dependencies:
     "es5-shim" "^4.5.1"
 
+"videojs-swf@^5.4.2", "videojs-swf@5.4.2":
+  "integrity" "sha1-aWSpv/kDtzLz5GUxSuR4oCoX6Ks="
+  "resolved" "http://registry.m.jd.com/videojs-swf/download/videojs-swf-5.4.2.tgz"
+  "version" "5.4.2"
+
 "videojs-swf@5.4.1":
   "integrity" "sha1-IHfvccdJ8seCPvSbq65N0qywj4c="
   "resolved" "http://registry.m.jd.com/videojs-swf/download/videojs-swf-5.4.1.tgz"
   "version" "5.4.1"
 
+"videojs-vtt.js@^0.15.5", "videojs-vtt.js@0.15.5":
+  "integrity" "sha1-Vnd26vKnqSjYixSKi0Aa3iQG8so="
+  "resolved" "http://registry.m.jd.com/videojs-vtt.js/download/videojs-vtt.js-0.15.5.tgz"
+  "version" "0.15.5"
+  dependencies:
+    "global" "^4.3.1"
+
 "videojs-vtt.js@0.12.6":
   "integrity" "sha1-4HhgC9qJnqpvnDMHE0zQyBGUe44="
   "resolved" "http://registry.m.jd.com/videojs-vtt.js/download/videojs-vtt.js-0.12.6.tgz"
   "version" "0.12.6"
-  dependencies:
-    "global" "^4.3.1"
-
-"videojs-vtt.js@0.15.5":
-  "integrity" "sha1-Vnd26vKnqSjYixSKi0Aa3iQG8so="
-  "resolved" "http://registry.m.jd.com/videojs-vtt.js/download/videojs-vtt.js-0.15.5.tgz"
-  "version" "0.15.5"
   dependencies:
     "global" "^4.3.1"
 
@@ -10328,6 +10540,11 @@
   "version" "1.7.3"
   dependencies:
     "minimalistic-assert" "^1.0.0"
+
+"weakmap-polyfill@2.0.4":
+  "integrity" "sha1-vMMB5MjrTto+QG8I8aaRCT5AeIQ="
+  "resolved" "http://registry.m.jd.com/weakmap-polyfill/download/weakmap-polyfill-2.0.4.tgz"
+  "version" "2.0.4"
 
 "web-vitals@^2.1.4":
   "integrity" "sha1-dlYxdaR1peg1Jk03NwT53ecYKQw="
@@ -10468,6 +10685,11 @@
   "integrity" "sha1-f4RzvIOd/YdgituV1+sHUhFXikI="
   "resolved" "http://registry.m.jd.com/websocket-extensions/download/websocket-extensions-0.1.4.tgz"
   "version" "0.1.4"
+
+"webwackify@0.1.6":
+  "integrity" "sha1-HUKhKsYYI9fjRaveCE6qpipKles="
+  "resolved" "http://registry.m.jd.com/webwackify/download/webwackify-0.1.6.tgz"
+  "version" "0.1.6"
 
 "webworkify-webpack@^2.1.5":
   "integrity" "sha1-v0M2YkwGJsvoXPH/3hV/eqkLHRw="
@@ -10789,6 +11011,16 @@
     "parse-headers" "^2.0.0"
     "xtend" "^4.0.0"
 
+"xhr@2.4.0":
+  "integrity" "sha1-4W5mpF+GmGHu76tBbV7/ci3ECZM="
+  "resolved" "http://registry.m.jd.com/xhr/download/xhr-2.4.0.tgz"
+  "version" "2.4.0"
+  dependencies:
+    "global" "~4.3.0"
+    "is-function" "^1.0.1"
+    "parse-headers" "^2.0.0"
+    "xtend" "^4.0.0"
+
 "xml-name-validator@^3.0.0":
   "integrity" "sha1-auc+Bt5NjG5H+fsYH3jWSK1FfGo="
   "resolved" "http://registry.m.jd.com/xml-name-validator/download/xml-name-validator-3.0.0.tgz"
@@ -10851,3 +11083,12 @@
   "integrity" "sha1-ApTrPe4FAo0x7hpfosVWpqrxChs="
   "resolved" "http://registry.m.jd.com/yocto-queue/download/yocto-queue-0.1.0.tgz"
   "version" "0.1.0"
+
+"youtube-player@^5.5.0":
+  "integrity" "sha1-cWmcoJPYrmXocJGJjPgSs1TiYeo="
+  "resolved" "http://registry.m.jd.com/youtube-player/download/youtube-player-5.6.0.tgz"
+  "version" "5.6.0"
+  dependencies:
+    "debug" "^4.3.4"
+    "load-script" "^1.0.0"
+    "sister" "^3.0.0"

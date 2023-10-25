@@ -1,7 +1,7 @@
 
 import React from "react";
-import 'react-grid-layout/css/styles.css';
-import 'react-resizable/css/styles.css';
+// import 'react-grid-layout/css/styles.css';
+// import 'react-resizable/css/styles.css';
 import _ from "lodash";
 import RGL, { WidthProvider } from "react-grid-layout";
 import Thumbnails, { Thumbnail } from '@antv/thumbnails';

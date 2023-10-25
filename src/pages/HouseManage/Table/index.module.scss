@@ -5,20 +5,43 @@
   background: #d9d9d9;
   margin: 20px 0px;
 }
-
+.option{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  .edit{
+    color: white;
+    background: #4096ff;
+    padding: 4px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .delete{
+    color: white;
+    background:#ed0f11;
+    padding: 4px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
 .titleBox{
   display: flex;
+  gap:10px;
+  justify-content: center;
   align-items: center;
-  .icon{
-    font-size: 18px;
-    width: 34px;
-    border-radius: 50%;
-    height: 34px;
-    margin-right: 8px;
-  }
+
   .title{
     animation: blink 1s linear infinite;  
 
+  }
+  .icon{
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
   }
   @keyframes blink {  
     0% {  

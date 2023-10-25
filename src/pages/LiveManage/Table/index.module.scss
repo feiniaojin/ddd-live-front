@@ -7,7 +7,33 @@
 }
 .option{
   display: flex;
-  gap:10px
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  .edit{
+    color: white;
+    background: #4096ff;
+    padding: 4px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .delete{
+    color: white;
+    background:#ed0f11;
+    padding: 4px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .other{
+    color: white;
+    background:#686767;
+    padding: 4px 15px;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+  }
 }
 
 .titleBox{
