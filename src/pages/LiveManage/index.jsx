@@ -17,7 +17,7 @@ import { clsnames } from '@/utils'
 const data = [
   {
     key: 3,
-    name: '王者荣耀2000冲分',
+    name: 'mp4',
     age: 29,
     id: '0000523',
     address: 'Jiangsu No. 1 Lake Park',
@@ -26,19 +26,35 @@ const data = [
     isVp: true,
     time: "2023-06-19 13:50:59",
     status: "正常",
+    url:"https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4",
     avator: "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2F54ce65a6-c356-4cb1-84cb-da83cec1c846%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1700465591&t=400c39350093e083f342e6a34ffad7f7"
   },
   {
     key: 4,
     id: '00001980',
-    name: 'lisa 美妆',
+    name: 'lisa 美妆 flv',
     age: 32,
     type: "person",
     address: 'Sydney No. 1 Lake Park',
     description: 'My name is Joe Black, I am 32 years old, living in Sydney No. 1 Lake Park.',
     avator: "https://img0.baidu.com/it/u=2779786549,2320236013&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
     time: "2023-08-07 9:00:00",
-    status: "正常"
+    status: "正常",
+    url:"https://sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/flv/xgplayer-demo-360p.flv"
+
+  },
+  {
+    key: 4,
+    id: '00001980',
+    name: 'lisa 美妆 mau8',
+    age: 32,
+    type: "person",
+    address: 'Sydney No. 1 Lake Park',
+    description: 'My name is Joe Black, I am 32 years old, living in Sydney No. 1 Lake Park.',
+    avator: "https://img0.baidu.com/it/u=2779786549,2320236013&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+    time: "2023-08-07 9:00:00",
+    status: "正常",
+    url:"http://mqiptv.com:8014/ch/cctv8/mqlive.m3u8"
   },
 ];
 export default function ListView(props) {
@@ -113,10 +129,8 @@ export default function ListView(props) {
       }  </div>
     <Tour open={open} onClose={() => setOpen(false)} steps={steps} />
     <Model visible={visible} onEdit={onEdit} target={target} />
-    {isPlay&&<VideoModel visible={isPlay} onShow={handleButtonClick}  link={url} />}
+    {isPlay&&<VideoModel visible={isPlay} onShow={handleButtonClick}  src={url} />}
   </div>
 }
-
-
 
 

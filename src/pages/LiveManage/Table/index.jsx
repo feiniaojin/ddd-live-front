@@ -55,10 +55,10 @@ const App = (props) => {
             <a className={styles.delete}>删除</a>
 
           </Popconfirm>
-      <a className={styles.other} onClick={()=>{
-          props.handleButtonClick(true,"https://sf1-hscdn-tos.pstatp.com/obj/media-fe/xgplayer_doc_video/flv/xgplayer-demo-360p.flv");
+     {row.url&& <a className={styles.other} onClick={()=>{
+          props.handleButtonClick(true,row.url);
 
-      }}>直播预览</a>
+      }}>直播预览</a>}
       <a
       onClick={()=>{
         writeToClipboard('推流地址',"推流地址已成功复制到剪贴板！");
